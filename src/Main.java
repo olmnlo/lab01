@@ -174,22 +174,16 @@ public class Main {
          * 12. Write a Java program to convert seconds to hours, minutes and seconds.
          */
 
-        System.out.println("What do you want to do: ");
-        System.out.println("1- converte seconds to minutes\n2- converte second to hours");
-        System.out.print("chose number: ");
-        int user_chose = scn.nextInt();
+        System.out.println("Time converter");
         System.out.print("Enter the seconds: ");
-        int second_time = scn.nextInt();
-        switch (user_chose) {
-            case 1:
-                System.out.println(second_time+ " in minutes is: "+ second_time/60);
-                break;
-            case 2:
-                System.out.println(second_time+ " in hours is: "+ second_time/60/60);
-            default:
-                System.out.println("you chose wrong number");
-                break;
-        }
+        int totalSeconds = scn.nextInt();
+        int hours = totalSeconds / 3600;
+        int minutes = (totalSeconds % 3600) / 60;
+        int seconds = totalSeconds % 60;
+
+        System.out.printf("%d:%d:%d", hours, minutes, seconds);
+
+        System.out.println();
 
         /*
          * 13. Write a Java program that accepts four integers from the user and prints equal if all
