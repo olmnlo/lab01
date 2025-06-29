@@ -304,12 +304,12 @@ public class Main {
         for (int i = 0; i < user_sentense.length(); i++) {
             if (comparable_char == user_sentense.charAt(i)){
                 counter++;
-            }else{
-                continue;
             }
         }
 
         System.out.println("Number of a's: "+ counter);
+
+        scn.close();
     }   
 
 }
