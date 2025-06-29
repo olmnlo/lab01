@@ -153,14 +153,18 @@ public class Main {
         }
         if (first_number_compare <= second_number_compare){
             System.out.println(first_number_compare + "<=" + second_number_compare);
-            System.out.println(first_number_compare + "<" + second_number_compare);
         }
         if (first_number_compare >= second_number_compare){
             System.out.println(first_number_compare + ">=" + second_number_compare);
-            System.out.println(first_number_compare + ">" + second_number_compare);
         }
         if (first_number_compare != second_number_compare){
             System.out.println(first_number_compare + "!=" + second_number_compare);
+        }
+        if (first_number_compare > second_number_compare){
+            System.out.println(first_number_compare + ">" + second_number_compare);
+        }
+        if (first_number_compare < second_number_compare){
+            System.out.println(first_number_compare + "<" + second_number_compare);
         }
             System.out.println("Thank you for compare");
 
